@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title-container">
+        <h2>Simple To-Do App</h2>
+      </div>
+      <div class="layout">
+        <form>
+          <input id="userInput" type="text" placeholder="Ctrl + k" />
+          <label for="userInput"></label>
+          <button class="add-btn add-button" type="button">Add</button>
+        </form>
+        <div class="category-container">
+          <a class="category-btn active-tasks" href="#">Active Tasks</a>
+          <a class="category-btn completed-tasks" href="#">Completed Tasks</a>
+        </div>
+        <div class="list-container">
+          <div class="parent-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

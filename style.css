@@ -1,0 +1,157 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.title-container {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+form > input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.layout {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.layout::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.layout {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 
+
+button {
+    cursor: pointer;
+}
+
+.category-container {
+    margin-bottom: 10px;
+}
+
+.category-btn {
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    border-bottom: 1px solid rgba(92, 92, 92, 0);
+    padding: 3px;
+}
+
+.selected {
+    color: white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.tasks {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.add-button {
+    color: white;
+    padding: 7px 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.item-button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 2px 4px;
+    color: white;
+}
+
+.complete-icon, .edit-icon,
+.delete-icon {
+    color: rgb(255, 255, 255);
+    width: 18px;
+    height: 18px;
+}
+.delete-btn {
+    background-color: red;
+    border: 1px solid red;
+}
+.priority-btn {
+    background-color: rgba(255, 192, 203, 0);
+    border: none;
+    border-radius: 3px;
+    padding: 2px 4px;
+    color: white;
+}
+
+.priority-icon {
+    color: rgb(255, 255, 255);
+    width: 18px;
+    height: 18px;
+}
+
+.priority-icon:active {
+    color: yellow;
+    fill: yellow;
+}
+
+.priority-icon:hover {
+    color: yellow;
+    fill: yellow;
+}
+
+.yellow {
+    border-left: 2px solid yellow;
+}
+
+.completed {
+    /* text-decoration:line-through; */
+    color: rgb(82, 82, 82);
+    display: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.task-item {
+    flex: 1;
+    margin-right: 10px;
+}
+
+
